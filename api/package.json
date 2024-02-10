@@ -1,0 +1,47 @@
+{
+  "name": "api-daily-diet",
+  "version": "1.0.0",
+  "description": "Api Crud of Diet",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src --out-dir build",
+    "test": "vitest",
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filipe-Santos17/daily-diet"
+  },
+  "keywords": [
+    "diet",
+    "api",
+    "fastify",
+    "node"
+  ],
+  "author": "Filipe Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Filipe-Santos17/daily-diet/issues"
+  },
+  "homepage": "https://github.com/Filipe-Santos17/daily-diet#readme",
+  "dependencies": {
+    "dotenv": "16.4.1",
+    "fastify": "4.26.0",
+    "knex": "3.1.0",
+    "sqlite3": "5.1.7",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.17",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "eslint": "8.56.0",
+    "supertest": "^6.3.4",
+    "tsup": "^8.0.1",
+    "tsx": "4.7.0",
+    "typescript": "5.3.3",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "1.2.2"
+  }
+}
